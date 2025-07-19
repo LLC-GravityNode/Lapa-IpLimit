@@ -55,7 +55,7 @@ async def get_panel_logs(panel_data: PanelType) -> None:
                     + f"/logs?interval={interval}&token={token}",
                     ssl=ssl_context if scheme == "wss" else None,
                 ) as ws:
-                    log_message = "Establishing connection for the main panel"
+                    log_message = "🎉 Установление соединения с главной панелью"
                     await send_logs(log_message)
                     logger.info(log_message)
                     while True:
@@ -66,7 +66,7 @@ async def get_panel_logs(panel_data: PanelType) -> None:
                 break
             except Exception as error:  # pylint: disable=broad-except
                 log_message = (
-                    f"[Main panel] Failed to connect {error} trying 20 second later!"
+                    f"[Главная панель] Не удалось подключиться {error} пробую через 20 секунд!"
                 )
                 await send_logs(log_message)
                 logger.error(log_message)
