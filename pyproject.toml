@@ -1,0 +1,10 @@
+[project]
+name = "lapa-iplimit"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "python-telegram-bot>=22.2",
+    "websockets>=15.0.1",
+]

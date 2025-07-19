@@ -1,0 +1,13 @@
+{
+  "BOT_TOKEN": "TOKEN",
+  "ADMINS": [
+    123123123
+  ],
+  "IP_LOCATION": "RU",
+  "PANEL_DOMAIN": "examole.com:8000",
+  "PANEL_USERNAME": "Admin",
+  "PANEL_PASSWORD": "Admin123",
+  "CHECK_INTERVAL": 240,
+  "TIME_TO_ACTIVE_USERS": 600,
+  "GENERAL_LIMIT": 2
+}
