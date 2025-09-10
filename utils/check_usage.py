@@ -36,13 +36,13 @@ async def check_ip_used() -> dict:
         )
     )
     messages = [
-        f"<code>{email}</code> всего <code>{len(ips)}</code> акстивный ip  \n- "
+        f"<code>{email}</code> всего <code>{len(ips)}</code> активных ip  \n- "
         + "\n- ".join(ips)
         for email, ips in all_users_log.items()
         if ips
     ]
     logger.info("Количество всех активных IP-адресов: %s", str(total_ips))
-    messages.append(f"---------\nВсего Всего активных IPs: <b>{total_ips}</b>")
+    messages.append(f"---------\nВсего активных IP: <b>{total_ips}</b>")
     shorter_messages = [
         "\n".join(messages[i : i + 100]) for i in range(0, len(messages), 100)
     ]
